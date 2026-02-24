@@ -162,17 +162,5 @@ Frontend Developer | React | Next.js | TypeScript
 
 ---
 
-## 📄 License
-
-This project is built for demonstration and assessment purposes.
-
-````
-
----
-
-```markdown
-Khadiza Jarin Roza
-
-
 
 
