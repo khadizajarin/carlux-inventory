@@ -1,36 +1,189 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚗 Carlux Inventory Dashboard
 
-## Getting Started
+A premium, high-performance vehicle inventory dashboard built with **Next.js 15**, **TypeScript**, and **Tailwind CSS**.
 
-First, run the development server:
+This project was developed as part of a technical assessment to demonstrate clean architecture, efficient state management, responsive UI design, and optimized frontend performance.
+
+---
+
+## ✨ Features
+
+- 📦 Fetches live data from DummyJSON API
+- 🔍 Real-time search filtering (by vehicle title)
+- ↕️ Price sorting (Low → High / High → Low)
+- ⚡ Optimized image rendering with Next.js `<Image />`
+- 🎨 Custom dark-themed design system using CSS variables
+- 📱 Fully responsive (Mobile → Desktop)
+- 🧱 Clean component-based architecture
+- 🧠 Efficient state handling with memoized filtering
+- 🚦 Proper loading and error states
+
+---
+
+## 🛠️ Tech Stack
+
+- **Next.js 15 (App Router)**
+- **React 18**
+- **TypeScript**
+- **Tailwind CSS**
+- **TanStack React Query** (for server state management)
+- **Lucide Icons**
+
+---
+
+## 📁 Project Structure
+
+```
+
+app/
+├── layout.tsx
+├── page.tsx
+├── providers.tsx
+├── globals.css
+
+components/
+├── ProductCard.tsx
+├── ProductGrid.tsx
+├── SearchBar.tsx
+├── SortDropdown.tsx
+
+hooks/
+├── useProducts.ts
+
+````
+
+Architecture follows separation of concerns:
+
+- `hooks/` → Data fetching logic
+- `components/` → UI building blocks
+- `app/` → Layout and routing
+- `globals.css` → Design system & theme tokens
+
+---
+
+## 🎨 Design System
+
+The UI is powered by a custom HSL-based design token system using CSS variables:
+
+- `--background`
+- `--primary`
+- `--card`
+- `--border`
+- `--muted`
+- Custom shadow tokens
+- Custom font pairing (Inter + Playfair Display)
+
+This allows scalable theme management without hardcoded colors.
+
+---
+
+## 🚀 Getting Started
+
+### 1️⃣ Clone the repository
+
+```bash
+git clone https://github.com/khadizajarin/carlux-inventory.git
+cd carlux-inventory
+````
+
+### 2️⃣ Install dependencies
+
+```bash
+npm install
+```
+
+### 3️⃣ Run the development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Visit:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🌍 API Used
 
-To learn more about Next.js, take a look at the following resources:
+Data source:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+https://dummyjson.com/products/category/vehicle
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+The application gracefully handles:
 
-## Deploy on Vercel
+* Loading states
+* API errors
+* Empty results
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## ⚡ Performance Considerations
+
+* Uses optimized `next/image`
+* Avoids unnecessary re-renders via memoization
+* Keeps bundle size minimal
+* No unnecessary heavy UI libraries
+* Clean DOM structure
+
+---
+
+## 📱 Responsiveness
+
+Grid adapts to:
+
+* 1 column → mobile
+* 2 columns → tablet
+* 3–4 columns → desktop
+
+Designed to maintain visual hierarchy and luxury aesthetics across screen sizes.
+
+---
+
+## 📌 Improvements (Future Scope)
+
+* Server-side filtering
+* Pagination or infinite scroll
+* Debounced search
+* Theme toggle (Light/Dark)
+* Unit testing
+
+---
+
+## 🧑‍💻 Author
+
+Developed by **Khadiza Jarin Roza**
+
+Frontend Developer | React | Next.js | TypeScript
+
+---
+
+## 📄 License
+
+This project is built for demonstration and assessment purposes.
+
+````
+
+---
+
+# 🎯 Before You Submit
+
+### Replace:
+```markdown
+Khadiza Jarin Roza
+````
+
+With your real name.
+
+### Update GitHub link:
+
+```markdown
+https://github.com/khadizajarin/carlux-inventory
+```
+
+---
+

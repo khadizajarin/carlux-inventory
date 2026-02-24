@@ -39,7 +39,7 @@ export default function Home() {
       </header>
 
       {/* Main */}
-      <main className="lg:ml-20 container py-8 space-y-8">
+      <main className="lg:ml-20 ml-2 container py-8 space-y-8">
         <InventoryToolbar
           search={search}
           onSearchChange={setSearch}
