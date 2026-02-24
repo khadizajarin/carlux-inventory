@@ -170,20 +170,9 @@ This project is built for demonstration and assessment purposes.
 
 ---
 
-# 🎯 Before You Submit
-
-### Replace:
 ```markdown
 Khadiza Jarin Roza
-````
 
-With your real name.
 
-### Update GitHub link:
 
-```markdown
-https://github.com/khadizajarin/carlux-inventory
-```
-
----
 
