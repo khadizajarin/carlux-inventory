@@ -23,10 +23,10 @@ export default function Home() {
   }, [products, search, sort]);
 
   return (
-    <div className="min-h-screen w-full justify-center bg-background">
+    <div className="min-h-screen bg-background">
       {/* Header */}
-      <header className="border-b border-border">
-        <div className="container py-6 flex items-center justify-between">
+      <header className=" border-b border-border">
+        <div className="ml-20  container py-6 flex items-center justify-between">
           <div>
             <h1 className="text-3xl font-display font-bold text-foreground tracking-tight">
               Carl<span className="text-primary">ux</span>
@@ -39,7 +39,7 @@ export default function Home() {
       </header>
 
       {/* Main */}
-      <main className="container py-8 space-y-8">
+      <main className="ml-20 container py-8 space-y-8">
         <InventoryToolbar
           search={search}
           onSearchChange={setSearch}
